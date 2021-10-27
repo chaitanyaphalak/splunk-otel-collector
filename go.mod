@@ -156,7 +156,6 @@ require (
 	github.com/gobwas/glob v0.2.4-0.20181002190808-e7a84e9525fe // indirect
 	github.com/gogo/googleapis v1.4.1 // indirect
 	github.com/golang-sql/civil v0.0.0-20190719163853-cb61b32ac6fe // indirect
-	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
@@ -409,4 +408,18 @@ replace (
 replace (
 	github.com/shirou/gopsutil => github.com/shirou/gopsutil v3.21.8+incompatible
 	github.com/shirou/gopsutil/v3 => github.com/shirou/gopsutil/v3 v3.21.8
+)
+
+// pin/update for security vulnerabilities
+replace (
+	github.com/go-yaml/yaml => gopkg.in/yaml.v2 v2.2.3
+	github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
+	github.com/google/cadvisor => github.com/google/cadvisor v0.37.5
+	github.com/hashicorp/go-slug => github.com/hashicorp/go-slug v0.5.0
+	github.com/opencontainers/runc => github.com/opencontainers/runc v1.0.2
+	github.com/satori/go.uuid => github.com/satori/go.uuid v1.2.1-0.20180404165556-75cca531ea76
+	github.com/ulikunitz/xz => github.com/ulikunitz/xz v0.5.8
+	golang.org/x/crypto => golang.org/x/crypto v0.0.0-20210920023735-84f357641f63
+	golang.org/x/net => golang.org/x/net v0.0.0-20210917221730-978cfadd31cf
+	golang.org/x/text => golang.org/x/text v0.3.7
 )

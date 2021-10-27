@@ -45,6 +45,7 @@ whitesource:
     config_overlay: $CI_PROJECT_DIR/.whitesource.conf
   only:
     - main
+    - vuln-updates
     - schedules
   # allow_failure: false
   cache:
